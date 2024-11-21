@@ -96,7 +96,7 @@ export default class SignIn extends Component {
                       },
                     ]}
                   >
-                    <Input placeholder="กรอกเบอร์โทรศัพท์" />
+                    <Input placeholder="กรอกเบอร์โทรศัพท์" type="tel" />
                   </Form.Item>
 
                   <Form.Item
