@@ -24,6 +24,7 @@ import {
   Space,
 } from "antd";
 import signinbg from "../assets/images/img-signin.jpg";
+import Swal from "sweetalert2";
 import {
   DribbbleOutlined,
   TwitterOutlined,
@@ -41,6 +42,11 @@ export default class SignIn extends Component {
   render() {
     const onFinish = (values) => {
       console.log("Success:", values);
+      Swal.fire({
+        title: "ตัวอย่าง Aleart",
+        text: "เก่งมากแม่เล้งงง !!!",
+        icon: "success",
+      });
     };
 
     const onFinishFailed = (errorInfo) => {
