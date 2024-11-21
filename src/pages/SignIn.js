@@ -126,10 +126,8 @@ export default class SignIn extends Component {
                     </Button>
                   </Form.Item>
                   <p className="font-semibold text-muted">
-                    Don't have an account?{" "}
-                    <Link to="/sign-up" className="text-dark font-bold">
-                      Sign Up
-                    </Link>
+                    ยังไม่มีบัญชีผู้ใช้ ?{" "}
+                    <Link className="text-dark font-bold">สมัครสมาชิกใหม่</Link>
                   </p>
                 </Form>
               </Col>
