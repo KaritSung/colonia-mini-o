@@ -10,6 +10,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 import React, { Component } from "react";
+import mainImg from "../assets/images/main_bg.png";
 import { Link } from "react-router-dom";
 import {
   Layout,
@@ -57,32 +58,32 @@ export default class SignIn extends Component {
         <Layout
           className="layout-default layout-signin"
           style={{
+            backgroundImage: `url(${mainImg})`,
+            backgroundSize: "cover", // ปรับให้รูปเต็มพื้นที่โดยไม่บิดเบือน
+            backgroundPosition: "center", // จัดให้อยู่กึ่งกลาง
+            backgroundRepeat: "no-repeat", // ไม่ให้รูปซ้ำ
             minHeight: "100vh", // ความสูงเต็มหน้าจอ
             width: "100%", // ความกว้างเต็มหน้าจอ
+            padding: 20,
           }}
         >
-          <Content className="signin">
+          <Content className="signin" style={{ marginTop: "20px" }}>
             <Row gutter={[24, 0]} justify="space-around">
               <Col
                 xs={{ span: 24, offset: 0 }}
-                lg={{ span: 6, offset: 2 }}
+                lg={{ span: 6, offset: 0 }}
                 md={{ span: 12 }}
               >
                 <Title
-                  style={{ textAlign: "center", fontSize: 24 }}
+                  style={{
+                    textAlign: "center",
+                    fontSize: 34,
+                    color: "#57734D",
+                  }}
                   className="mb-10"
                 >
-                  เข้าสู่ระบบ
+                  ลงชื่อเข้าใช้งาน
                 </Title>
-                <Space
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <img src={logo} width={150} alt="Logo" />
-                </Space>
 
                 <Form
                   onFinish={onFinish}
@@ -93,7 +94,7 @@ export default class SignIn extends Component {
                   <Form.Item
                     className="username"
                     label="
-                    เบอร์โทรศัพท์"
+                    เบอร์โทรศัพท์ / อีเมล์"
                     name="tel"
                     rules={[
                       {
@@ -102,34 +103,34 @@ export default class SignIn extends Component {
                       },
                     ]}
                   >
-                    <Input placeholder="กรอกเบอร์โทรศัพท์" type="tel" />
-                  </Form.Item>
-
-                  <Form.Item
-                    name="remember"
-                    className="aligin-center"
-                    valuePropName="checked"
-                  >
-                    <Switch defaultChecked onChange={onChange} />
-                    Remember me
+                    <Input placeholder="กรอกข้อมูลผู้ใช้งาน" type="tel" />
                   </Form.Item>
 
                   <Form.Item>
                     <Button
                       type="primary"
                       htmlType="submit"
-                      style={{ width: "100%", padding: 3 }}
+                      style={{
+                        width: "100%",
+                        padding: 3,
+                        backgroundColor: "#57734D",
+                      }}
                     >
                       <Title style={{ color: "white" }} level={5}>
                         เข้าสู่ระบบ
                       </Title>
                     </Button>
                   </Form.Item>
-                  <p className="font-semibold text-muted">
-                    ยังไม่มีบัญชีผู้ใช้ ?{" "}
-                    <Link className="text-dark font-bold">สมัครสมาชิกใหม่</Link>
-                  </p>
                 </Form>
+                <Title
+                  style={{
+                    textAlign: "center",
+                    fontSize: 16,
+                    color: "#57734D",
+                  }}
+                >
+                  ลงทะเบียนเข้าใช้งาน
+                </Title>
               </Col>
             </Row>
           </Content>
@@ -168,11 +169,6 @@ export default class SignIn extends Component {
                 <Link to="#">{<GithubOutlined />}</Link>
               </Menu.Item>
             </Menu>
-            <p className="copyright">
-              {" "}
-              Copyright © 2024 โดยกูเอง แอพกู ห้ามดัดแปลง
-              หรือเปลี่ยนสไตร์เด็ดขาด <a href="#pablo">Colonia Dev</a>.{" "}
-            </p>
           </Footer>
         </Layout>
       </>
