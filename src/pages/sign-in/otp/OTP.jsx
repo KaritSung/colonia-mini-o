@@ -105,6 +105,7 @@ const OtpPage = ({ backwardPage }) => {
           >
             <InputOTP
               name="otp"
+              type="tel"
               style={{ fontSize: 30, height: 50 }}
               inputType="numeric"
               onChange={onOtpChange}
