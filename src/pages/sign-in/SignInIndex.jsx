@@ -120,13 +120,31 @@ const SignInIndex = () => {
         </Menu>
         <Menu mode="horizontal" className="menu-nav-social">
           <Menu.Item>
-            <Link to="#">{<img src={gmail} alt="Logo" width={55} />}</Link>
+            <a
+              href="mailto:example@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={gmail} alt="gmail" width={55} />
+            </a>
           </Menu.Item>
           <Menu.Item>
-            <Link to="#">{<img src={line} alt="Logo" width={55} />}</Link>
+            <a
+              href="line://ti/p/@karit1150"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={line} alt="Line" width={55} />
+            </a>
           </Menu.Item>
           <Menu.Item>
-            <Link to="#">{<img src={facebook} alt="Logo" width={55} />}</Link>
+            <a
+              href="https://www.facebook.com/SinAsmoDeus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} alt="Facebook" width={55} />
+            </a>
           </Menu.Item>
         </Menu>
       </Footer>
