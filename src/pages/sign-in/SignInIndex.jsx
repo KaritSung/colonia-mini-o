@@ -130,7 +130,7 @@ const SignInIndex = () => {
           </Menu.Item>
           <Menu.Item>
             <a
-              href="line://ti/p/@karit1150"
+              href="http://line.me/ti/p/~karit1150"
               target="_blank"
               rel="noopener noreferrer"
             >

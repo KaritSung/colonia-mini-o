@@ -17,7 +17,7 @@ import Rtl from "./pages/Rtl";
 import Profile from "./pages/Profile";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-import SignInIndex from "./pages/sign-in/SignInIndex";
+import SignInIndex from "./pages/sign-in/SignInIndex.jsx";
 import Main from "./components/layout/Main";
 import "antd/dist/antd.css";
 import "./assets/styles/main.css";
