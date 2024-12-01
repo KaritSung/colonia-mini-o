@@ -1,4 +1,5 @@
 import { Layout, Button, Row, Col, Typography, Form, Input } from "antd";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Swal from "sweetalert2";
 
 const { Title, Text } = Typography;
@@ -75,7 +76,12 @@ const LoginPage = ({ forwardPage }) => {
             color: "#57734D",
           }}
         >
-          ลงทะเบียนเข้าใช้งาน
+          <Link
+            to="/sign-up"
+            style={{ color: "#57734D", textDecoration: "none" }}
+          >
+            ลงทะเบียนเข้าใช้งาน
+          </Link>
         </Title>
       </Col>
     </Row>
