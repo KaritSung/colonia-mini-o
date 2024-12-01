@@ -17,6 +17,7 @@ import Rtl from "./pages/Rtl";
 import Profile from "./pages/Profile";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+import SignInIndex from "./pages/sign-in/SignInIndex";
 import Main from "./components/layout/Main";
 import "antd/dist/antd.css";
 import "./assets/styles/main.css";
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/sign-up" exact component={SignUp} />
-        <Route path="/sign-in" exact component={SignIn} />
+        <Route path="/sign-in" exact component={SignInIndex} />
         <Main>
           <Route exact path="/" component={Home} />
           {/* <Route exact path="/tables" component={Tables} />
