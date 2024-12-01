@@ -60,7 +60,7 @@ const SignUpIndex = () => {
         >
           เงื่อนไขและข้อตกลง
         </Text>
-        <Divider />
+
         {/* กล่อง Terms and Conditions */}
         <div
           style={{
