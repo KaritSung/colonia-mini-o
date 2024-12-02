@@ -23,6 +23,7 @@ import "antd/dist/antd.css";
 import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
 import SignUpIndex from "./pages/sign-up/SignUpIndex.jsx";
+import HomePage from "./pages/home/Home.jsx";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path="/sign-up" exact component={SignUpIndex} />
         <Route path="/sign-in" exact component={SignInIndex} />
         <Main>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={HomePage} />
           {/* <Route exact path="/tables" component={Tables} />
           <Route exact path="/billing" component={Billing} />
           <Route exact path="/rtl" component={Rtl} />
